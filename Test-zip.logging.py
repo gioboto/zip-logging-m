@@ -2,7 +2,7 @@
 # el modulo logging ayuda a depurar códiog en lugar de usar prints!!!
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
+from elprint import elprint as elprinto
 
 Numeros = [1,2,3,4,5,6,7,8,9,0]
 Letras = ["a" ,"b", "c" ,"d","e","f","g","h","i","j","k"]
@@ -22,10 +22,10 @@ for Numero , Letra in zip(Numeros, Letras):
     Lix.append(str(Numero)+Letra)
     logging.critical(f"la Lista, {Lix}")
     
-print(Mix)
-print(Lix)
-print(Mix2)
-print(Mix3)
+elprinto(Mix)
+elprinto(Lix)
+elprinto(Mix2)
+elprinto(Mix3)
 
 
 def test():
